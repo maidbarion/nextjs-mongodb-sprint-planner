@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS MongoDB Sprint Planner
 
-## Getting Started
+## Intro
 
-First, run the development server:
+This is a basic sprint planner that is built using [NextJS 14](https://nextjs.org/) and [MongoDB Atlas](https://www.mongodb.com/atlas). The minimum Node version is 18.17.0, and you will need to [create a MongoDB Atlas account](https://www.mongodb.com/atlas) to make use of a Database and also provide a URI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Config
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a Database called "sprintPlanner" and a collection called "tickets" in your Atlas account. Ensure that you create a .env file in your root directory, and place your MONGO_URI in it...
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+MONGO_URI=##
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+This project has only been tested using Node v18.17.0.
 
-To learn more about Next.js, take a look at the following resources:
+### `yarn install`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Install all dependencies.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+### `yarn dev`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the dev server.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `yarn build`
+
+Build the client server without running.
+
+### `yarn test`
+
+Run the unit test suite.
